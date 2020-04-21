@@ -26,7 +26,7 @@ services:
       - discovery.type=single-node
       - ES_JAVA_OPTS=-Xms100m -Xmx100m
   temporal:
-    image: temporalio/server:${SERVER_TAG:-0.21.1}
+    image: temporalio/auto-setup:${SERVER_TAG:-0.21.1}
     ports:
      - "7233:7233"
      - "7234:7234"
